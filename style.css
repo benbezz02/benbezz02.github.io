@@ -9,6 +9,11 @@ body {
   line-height: 1.6;
 }
 
+img {
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
 /* NAVBAR */
 .navbar {
   display: flex;
@@ -32,6 +37,8 @@ body {
   color: white;
   text-decoration: none;
 }
+
+/* MAIN PAGE */
 
 /* HERO */
 .hero {
@@ -90,6 +97,19 @@ body {
   width: 300px;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-link:hover .card {
+  transform: translateY(-5px);
+  transition: 0.2s;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 .project-category {
@@ -110,4 +130,88 @@ footer {
   padding: 20px;
   background: #111;
   color: white;
+}
+
+/* PROJECT PAGES */
+
+/* HERO */
+.project-hero {
+  padding: 80px 10%;
+  background: linear-gradient(to right, #111, #333);
+  color: white;
+}
+
+.project-hero h1 {
+  font-size: 40px;
+}
+
+.subtitle {
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+/* CONTAINER */
+.project-container {
+  padding: 50px 10%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* SECTIONS */
+.project-section {
+  margin-bottom: 40px;
+}
+
+.project-section h2 {
+  margin-bottom: 10px;
+}
+
+/* TAGS */
+.tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tags span {
+  background: #0077ff;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* IMAGE GRID */
+.image-grid {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.image-grid img {
+  width: 48%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* HIGHLIGHT SECTION */
+.highlight {
+  background: #f4f8ff;
+  padding: 20px;
+  border-left: 5px solid #0077ff;
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px 15px;
+  background: #0077ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn.secondary {
+  background: #555;
 }
