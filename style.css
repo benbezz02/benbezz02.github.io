@@ -215,3 +215,21 @@ footer {
 .btn.secondary {
   background: #555;
 }
+
+/* REMOVE LATER */
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: default;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.project-tech {
+  font-size: 0.9rem;
+  font-weight: 600;
+  opacity: 0.7;
+  margin-top: -5px;
+}
