@@ -80,11 +80,36 @@
   <div class="cards">
 
     <div class="card">
+      <h4>Heat Diffusion in a Multi-Room Apartment</h4>
+      <p class="project-tech">Python · MPI · Domain Decomposition · Parallel Computing</p>
+      <p>
+        Simulated temperature distribution across a multi-room apartment using a 
+        Dirichlet-Neumann domain decomposition method. Each room is treated as a 
+        separate subdomain and solved in parallel using MPI, with neighbouring 
+        processes exchanging boundary values iteratively. The implementation 
+        supports varying apartment configurations, with the number of MPI processes 
+        corresponding to the number of subdomains.
+      </p>
+    </div>
+
+    <div class="card">
+      <h4>Simulating Burgers' Equation</h4>
+      <p class="project-tech">Python · Finite Volume · Newton-Krylov · GMRES · Multigrid</p>
+      <p>
+        Implemented a solver for Burgers' equation from scratch using finite-volume 
+        spatial discretization and implicit Euler time integration. At each time 
+        step, the resulting nonlinear system is solved using an inexact 
+        Jacobian-free Newton method, with GMRES for the linearized systems and a 
+        two-level multigrid (2MG) preconditioner to accelerate convergence.
+      </p>
+    </div>
+
+    <div class="card">
       <h4>Investigating Simulated Radio Signals using Machine Learning</h4>
       <p class="project-tech">Python · PyTorch · Machine Learning</p>
       <p>
         Applied convolutional neural networks and other machine learning
-        techniques to simulated radio signals, evaluating model performance
+        techniques to simulated Pulsar radio signals, evaluating model performance
         across different signal-to-noise ratios.
       </p>
     </div>
