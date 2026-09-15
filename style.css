@@ -179,9 +179,9 @@ a {
 }
 
 .profile-img {
-  width: 250px;
-  height: 190px;
-  object-fit: cover;
+  width: auto;
+  height: 250px;
+  object-fit: contain;
   border-radius: 12px;
   flex-shrink: 0;
 }
